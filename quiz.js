@@ -268,3 +268,4 @@ document.getElementById("question-box").innerHTML = resultHtml;
  
 });
     // Flatten the results by iterating over 'ultra' object and extracting the 'result' property
+    
