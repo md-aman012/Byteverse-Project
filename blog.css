@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+
 }
 
 .navbar {
@@ -57,11 +60,13 @@ a{
 }
 
 .card-container{
-    border: 1px solid red;
+    
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin: 10px;
+    background: linear-gradient(to right, #eafbea, #d2f5d2);
+    
 }
 
 .card_image{
@@ -77,8 +82,9 @@ a{
     /* border: 1px solid yellow; */
     width: 20vw;
     border-radius: 5px;
-    box-shadow: 0 0 3px 4px rgb(231, 217, 217);
+    /* box-shadow: 0 0 3px 4px rgb(231, 217, 217); */
     margin: 2em;
+    background-color: white;
 }
 
 .card_heading{
@@ -104,10 +110,6 @@ a{
 .card_heading:hover{
     scale: 1.05;
 }
-
-
-
-
 
 
 
