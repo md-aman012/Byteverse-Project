@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+
+    display: flex;
+    justify-content: space-between;
+    background-color: #556945;
+    padding: 40px;
+    color: white;
+    flex-wrap: wrap;
+    font-size: 25px;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 0 3px 5px rgb(173, 166, 166);
+}
+
+a{
+    text-decoration: none;
+}
+.links a {
+    text-decoration: none;
+    color: white;
+}
+
+.left {
+    padding-left: 5vw;
+}
+
+.left a{
+    color: white;
+}
+.left:hover{
+    scale: 1.1;
+}
+
+.right {
+    display: flex;
+    width: 40vw;
+    justify-content: space-around;
+   
+}
+
+.links {
+    padding: 10px;
+}
+
+#icon{
+    display: none;
+}
+
+.links:hover{
+    scale: 1.1;
+}
+
+.card-container{
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.card_image{
+    width: 20vw;
+    height: 28vh;
+    border-radius: 30px;
+    padding: 1vw;
+    
+}
+
+
+.card{
+    /* border: 1px solid yellow; */
+    width: 20vw;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 4px rgb(231, 217, 217);
+    margin: 2em;
+}
+
+.card_heading{
+    /* border:1px solid magenta; */
+    padding: 0 1vw 0 1vw;
+    font-size: 22px;
+    color: black;
+    
+}
+
+.card_description{
+    /* border: 1px solid brown; */
+    font-size: 18px;
+    padding: 0 1vw 0 1vw;
+}
+ .card-container a {
+    color: black;
+}
+
+.card_image:hover {
+    scale: 1.1 ;
+}
+.card_heading:hover{
+    scale: 1.05;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+    #icon{
+        display: block;
+    }
+    .right {
+        display: none;
+        flex-direction: column;
+        background-color: #556945;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        border: none;
+    }
+
+    .right.active {
+        display: flex;
+    }
+
+    .links {
+        text-align: center;
+        padding: 15px 0;
+    }
+    
+    .links:hover{
+        background-color: rgb(207, 197, 197);
+    }
+    
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    
+    }
+    .card{
+        width: 20rem;
+    }
+    .card_image{
+        width: 20rem;
+    }
+}
