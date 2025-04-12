@@ -102,7 +102,7 @@ a{
 .mainbox{
     height: 150vh;
     margin-top: 1vh;
-    background-image: url("bg.jpg");
+    background-image: url("/Byteverse-Project/images/bg.jpg");
     background-size:contain;
     padding: 2em;
 }
