@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to travel form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div >
+    <h3>Welcome to request appointment section</h3>
+    <h4>Fill the details below to request appointment as per your convinience</h4>
+<form action="index2.php" method="post" class="form">
+
+    <input type="text" name="name" id="name" placeholder="enter Patient's name"    class="form-control">
+
+    <input type="text" name="age" id="age" placeholder="enter Patient's age"    class="form-control"/>
+
+    <input type="text" name="gender" id="gender" placeholder="enter  Patient's  gender"     class="form-control"/>
+
+    <input type="email" name="email" id="email" placeholder="enter email address"     class="form-control">
+
+    <input type="phone" name="phone" id="phone" placeholder="enter phonenumber"        class="form-control"/>
+<label>Enter preffered time</label>
+    <input type="time" name="time" placeholder="enter preffered time"        class="form-control"/>
+    <label>Enter preffered date</label>
+    <input type="date" name="date"  placeholder="enter phonenumber"        class="form-control"/>
+
+    <textarea name="ti" id="ti" cols="10" rows="3" placeholder="eneter any other issue here"    class="form-control" aria-label="feedback"></textarea><br>
+
+ <button type="button" id="fosubmit" class="btn btn-outline-secondary" >Submit</button>
+</form>
+
+</div>
+<script src="index.js"></script>
+</body>
