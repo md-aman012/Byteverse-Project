@@ -1,0 +1,263 @@
+[
+  {
+    "disease": "Influenza (Flu)",
+    "symptoms": [
+      "fever",
+      "cough",
+      "fatigue",
+      "body pain",
+      "headache",
+      "shortness of breath",
+      "sore throat",
+      "nausea",
+      "loss of appetite",
+      "dizziness"
+    ]
+  },
+  {
+    "disease": "Common Cold",
+    "symptoms": [
+      "cough",
+      "fatigue",
+      "body pain",
+      "headache",
+      "sore throat",
+      "loss of appetite",
+      "dizziness",
+      "fever"
+    ]
+  },
+  {
+    "disease": "Viral Pneumonia",
+    "symptoms": [
+      "fever",
+      "cough",
+      "fatigue",
+      "body pain",
+      "headache",
+      "shortness of breath",
+      "loss of appetite",
+      "dizziness"
+    ]
+  },
+  {
+    "disease": "Acute Bronchitis",
+    "symptoms": [
+      "cough",
+      "fatigue",
+      "body pain",
+      "headache",
+      "shortness of breath",
+      "sore throat",
+      "fever"
+    ]
+  },
+  {
+    "disease": "Sinusitis (Viral)",
+    "symptoms": [
+      "headache",
+      "cough",
+      "sore throat",
+      "fatigue",
+      "loss of appetite",
+      "dizziness",
+      "fever",
+      "body pain"
+    ]
+  },
+  {
+    "disease": "Pharyngitis (Strep Throat)",
+    "symptoms": [
+      "fever",
+      "sore throat",
+      "headache",
+      "body pain",
+      "loss of appetite",
+      "nausea"
+    ]
+  },
+  {
+    "disease": "Gastroenteritis (Viral)",
+    "symptoms": [
+      "fever",
+      "nausea",
+      "loss of appetite",
+      "dizziness",
+      "fatigue",
+      "body pain",
+      "headache"
+    ]
+  },
+  {
+    "disease": "Labyrinthitis",
+    "symptoms": [
+      "dizziness",
+      "nausea",
+      "headache",
+      "fatigue",
+      "loss of appetite"
+    ]
+  },
+  {
+    "disease": "Meningitis (Viral)",
+    "symptoms": [
+      "fever",
+      "headache",
+      "nausea",
+      "fatigue",
+      "body pain",
+      "dizziness"
+    ]
+  },
+  {
+    "disease": "Early Stage Measles",
+    "symptoms": [
+      "fever",
+      "cough",
+      "sore throat",
+      "fatigue",
+      "body pain",
+      "headache",
+      "loss of appetite"
+    ]
+  },
+  {
+    "disease": "COVID-19 (Mild)",
+    "symptoms": [
+      "fever",
+      "cough",
+      "fatigue",
+      "body pain",
+      "headache",
+      "sore throat",
+      "loss of appetite",
+      "dizziness",
+      "shortness of breath"
+    ]
+  },
+  {
+    "disease": "Post-Viral Syndrome",
+    "symptoms": [
+      "fatigue",
+      "body pain",
+      "headache",
+      "shortness of breath",
+      "dizziness",
+      "loss of appetite",
+      "cough"
+    ]
+  },
+  {
+    "disease": "Dehydration",
+    "symptoms": [
+      "dizziness",
+      "headache",
+      "fatigue",
+      "loss of appetite",
+      "nausea"
+    ]
+  },
+  {
+    "disease": "Anemia",
+    "symptoms": [
+      "fatigue",
+      "dizziness",
+      "headache",
+      "shortness of breath",
+      "loss of appetite"
+    ]
+  },
+  {
+    "disease": "Migraine",
+    "symptoms": [
+      "headache",
+      "nausea",
+      "dizziness",
+      "fatigue",
+      "loss of appetite"
+    ]
+  },
+  {
+    "disease": "Food Poisoning",
+    "symptoms": [
+      "nausea",
+      "loss of appetite",
+      "dizziness",
+      "headache",
+      "body pain",
+      "fever"
+    ]
+  },
+  {
+    "disease": "Panic Attack",
+    "symptoms": [
+      "shortness of breath",
+      "dizziness",
+      "nausea",
+      "headache",
+      "fatigue"
+    ]
+  },
+  {
+    "disease": "Vertigo",
+    "symptoms": [
+      "dizziness",
+      "nausea",
+      "loss of appetite",
+      "headache"
+    ]
+  },
+  {
+    "disease": "Upper Respiratory Infection (URI)",
+    "symptoms": [
+      "cough",
+      "sore throat",
+      "headache",
+      "fatigue",
+      "loss of appetite",
+      "fever"
+    ]
+  },
+  {
+    "disease": "Lower Respiratory Infection (LRI)",
+    "symptoms": [
+      "cough",
+      "shortness of breath",
+      "fatigue",
+      "body pain",
+      "fever"
+    ]
+  },
+  {
+    "disease": "Allergic Reaction",
+    "symptoms": [
+      "shortness of breath",
+      "cough",
+      "nausea",
+      "dizziness"
+    ]
+  },
+  {
+    "disease": "Ear Infection (Otitis Media)",
+    "symptoms": [
+      "headache",
+      "dizziness",
+      "fever",
+      "loss of appetite"
+    ]
+  },
+  {
+    "disease": "Kidney Infection (Pyelonephritis)",
+    "symptoms": [
+      "fever",
+      "body pain",
+      "nausea",
+      "loss of appetite",
+      "fatigue"
+    ]
+  },
+  {
+    "disease": "Liver Inflammation (Hepatitis)",
+    "symptoms": []
+  }
+]
