@@ -20,7 +20,41 @@
         <div class="hamburger" id="hamburger">
             <div id="icon"><i class="fa fa-bars"></i></div>
         </div>
+<style>
+  .remedies {
+  display: block;
+  border-style: ridge;
+  color: blue;
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+#report {
+  width: 100%;
+  max-width: 600px;
+  margin: 50px auto; /* centers horizontally and adds spacing above */
+  padding: 20px;
+  background-color:#f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
 
+
+    #cure{
+      height: 800px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1100px;
+      margin-left: -80px;
+    
+    }
+
+</style>
         <!-- Navigation Links -->
         <div class="right" id="navLinks">
           <div class="links"><a class="hoverlinks" href="../blog.html">Blog</a></div>
@@ -54,6 +88,262 @@
     <button id ="button" style="display:none;">Get final result </button>
   </div>
 <div id ="report"></div>
+<div id="cure">
+    
+
+  <div class="influenza" style="display: none;">
+    <h1>Disease Remedies</h1>
+      <h2>1. Influenza (Flu)</h2>
+      <ul>
+          <li>Rest and stay hydrated</li>
+          <li>Use antipyretics (paracetamol) for fever and pain</li>
+          <li>Warm fluids like soup and herbal teas</li>
+          <li>Antiviral medications if prescribed</li>
+      </ul>
+  </div>
+
+  <div class="common_cold" style="display: none;">
+    <h1>Disease Remedies</h1>
+      <h2>2. Common Cold</h2>
+      <ul>
+          <li>Increase fluid intake</li>
+          <li>Steam inhalation for nasal congestion</li>
+          <li>Lozenges for sore throat</li>
+          <li>Rest and OTC medications like antihistamines</li>
+      </ul>
+  </div>
+
+  <div class="viral_pneumonia" style="display: none;">
+    <h1>Disease Remedies</h1>
+      <h2>3. Viral Pneumonia</h2>
+      <ul>
+          <li>Rest and fluids</li>
+          <li>Fever reducers and pain relievers</li>
+          <li>Oxygen therapy if needed</li>
+          <li>Antivirals if advised by doctor</li>
+      </ul>
+  </div>
+
+  <div class="acute_bronchitis" style="display: none;">
+    <h1>Disease Remedies</h1>
+      <h2>4. Acute Bronchitis</h2>
+      <ul>
+          <li>Cough suppressants if severe</li>
+          <li>Steam inhalation or humidified air</li>
+          <li>Rest and warm fluids</li>
+          <li>Avoid smoking and pollutants</li>
+      </ul>
+  </div>
+
+  <div class="sinusitis" style="display: none;">
+    <h1>Disease Remedies</h1>
+      <h2>5. Sinusitis (Viral)</h2>
+      <ul>
+          <li>Nasal saline sprays or rinses</li>
+          <li>Steam inhalation</li>
+          <li>Painkillers like ibuprofen</li>
+          <li>Short-term decongestants</li>
+      </ul>
+  </div>
+
+  <div class="pharyngitis" style="display: none;">
+    <h1>Disease Remedies</h1>
+      <h2>6. Pharyngitis (Strep Throat)</h2>
+      <ul>
+          <li>Warm salt water gargles</li>
+          <li>Throat lozenges</li>
+          <li>Painkillers for pain and fever</li>
+          <li>Antibiotics if confirmed bacterial infection</li>
+      </ul>
+  </div>
+
+  <div class="gastroenteritis" style="display: none;">
+    <h1>Disease Remedies</h1>
+      <h2>7. Gastroenteritis (Viral)</h2>
+      <ul>
+          <li>Oral rehydration salts (ORS)</li>
+          <li>Avoid solid food until vomiting stops</li>
+          <li>Gradual bland food introduction</li>
+          <li>Probiotics for gut health</li>
+      </ul>
+  </div>
+
+  <div class="labyrinthitis" style="display: none;">
+    <h1>Disease Remedies</h1>
+      <h2>8. Labyrinthitis</h2>
+      <ul>
+          <li>Bed rest during dizziness</li>
+          <li>Antiemetics for nausea</li>
+          <li>Vestibular suppressants if prescribed</li>
+          <li>Avoid sudden head movements</li>
+      </ul>
+  </div>
+
+  <div class="meningitis" style="display: none;">
+    <h1>Disease Remedies</h1>
+      <h2>9. Meningitis (Viral)</h2>
+      <ul>
+          <li>Rest and hydration</li>
+          <li>Pain relievers for headache and fever</li>
+          <li>Antiemetics for nausea</li>
+          <li>Hospital care if condition worsens</li>
+      </ul>
+  </div>
+
+  <div class="measles" style="display: none;">
+    <h1>Disease Remedies</h1>
+      <h2>10. Early Stage Measles</h2>
+      <ul>
+          <li>Vitamin A supplements</li>
+          <li>Fluids and soft diet</li>
+          <li>Antipyretics for fever</li>
+          <li>Isolation to prevent spread</li>
+      </ul>
+  </div>
+
+  <div class="covid19" style="display: none;">
+    <h1>Disease Remedies</h1>
+      <h2>11. COVID-19 (Mild)</h2>
+      <ul>
+          <li>Isolation and rest</li>
+          <li>Paracetamol for fever and pain</li>
+          <li>Fluids and proper nutrition</li>
+          <li>Steam inhalation for congestion</li>
+      </ul>
+  </div>
+
+  <div class="post_viral_syndrome" style="display: none;">
+    <h1>Disease Remedies</h1>
+      <h2>12. Post-Viral Syndrome</h2>
+      <ul>
+          <li>Gradual increase in activity</li>
+          <li>Nutritious diet and hydration</li>
+          <li>Painkillers if needed</li>
+          <li>Adequate rest and stress management</li>
+      </ul>
+  </div>
+
+  <div class="dehydration" style="display: none;">
+    <h1>Disease Remedies</h1>
+      <h2>13. Dehydration</h2>
+      <ul>
+          <li>Oral rehydration solution (ORS)</li>
+          <li>Electrolyte-rich fluids</li>
+          <li>Avoid caffeine and alcohol</li>
+          <li>IV fluids if severe</li>
+      </ul>
+  </div>
+
+  <div class="anemia" style="display: none;">
+    <h1>Disease Remedies</h1>
+      <h2>14. Anemia</h2>
+      <ul>
+          <li>Iron-rich foods</li>
+          <li>Iron supplements</li>
+          <li>Vitamin C to improve absorption</li>
+          <li>Treat underlying cause</li>
+      </ul>
+  </div>
+
+  <div class="migraine" style="display: none;">
+    <h1>Disease Remedies</h1>
+      <h2>15. Migraine</h2>
+      <ul>
+          <li>Rest in a dark, quiet room</li>
+          <li>Painkillers like ibuprofen</li>
+          <li>Cold compress on head or neck</li>
+          <li>Avoid known triggers</li>
+      </ul>
+  </div>
+
+  <div class="food_poisoning" style="display: none;">
+    <h1>Disease Remedies</h1>
+      <h2>16. Food Poisoning</h2>
+      <ul>
+          <li>Hydration with ORS</li>
+          <li>Avoid solid food till vomiting subsides</li>
+          <li>Antiemetics for nausea</li>
+          <li>Antibiotics if severe bacterial infection</li>
+      </ul>
+  </div>
+
+  <div class="panic_attack" style="display: none;">
+    <h1>Disease Remedies</h1>
+      <h2>17. Panic Attack</h2>
+      <ul>
+          <li>Deep, slow breathing exercises</li>
+          <li>Reassurance and calm surroundings</li>
+          <li>Avoid caffeine and stimulants</li>
+          <li>Short-acting anxiolytics if prescribed</li>
+      </ul>
+  </div>
+
+  <div class="vertigo" style="display: none;">
+    <h1>Disease Remedies</h1>
+      <h2>18. Vertigo</h2>
+      <ul>
+          <li>Rest and avoid sudden movements</li>
+          <li>Antihistamines or vestibular suppressants</li>
+          <li>Epley maneuver if appropriate</li>
+          <li>Hydration</li>
+      </ul>
+  </div>
+
+  <div class="uri" style="display: none;">
+    <h1>Disease Remedies</h1>
+      <h2>19. Upper Respiratory Infection (URI)</h2>
+      <ul>
+          <li>Warm salt water gargles</li>
+          <li>Steam inhalation</li>
+          <li>OTC cold medications</li>
+          <li>Rest and adequate fluids</li>
+      </ul>
+  </div>
+
+  <div class="lri" style="display: none;">
+    <h1>Disease Remedies</h1>
+      <h2>20. Lower Respiratory Infection (LRI)</h2>
+      <ul>
+          <li>Rest and hydration</li>
+          <li>Antipyretics for fever</li>
+          <li>Cough medications if needed</li>
+          <li>Antibiotics if bacterial cause suspected</li>
+      </ul>
+  </div>
+
+  <div class="allergic_reaction" style="display: none;">
+    <h1>Disease Remedies</h1>
+      <h2>21. Allergic Reaction</h2>
+      <ul>
+          <li>Antihistamines</li>
+          <li>Avoid known allergens</li>
+          <li>Hydration</li>
+          <li>Emergency epinephrine if anaphylaxis</li>
+      </ul>
+  </div>
+
+  <div class="ear_infection" style="display: none;">
+    <h1>Disease Remedies</h1>
+      <h2>22. Ear Infection (Otitis Media)</h2>
+      <ul>
+          <li>Warm compress to ear</li>
+          <li>Pain relievers</li>
+          <li>Antibiotics if severe</li>
+          <li>Keep ear dry</li>
+      </ul>
+  </div>
+
+  <div class="kidney_infection" style="display: none;">
+    <h1>Disease Remedies</h1>
+      <h2>23. Kidney Infection (Pyelonephritis)</h2>
+      <ul>
+          <li>Plenty of fluids</li>
+          <li>Antibiotics (oral/IV)</li>
+          <li>Pain relievers</li>
+          <li>Rest</li>
+      </ul>
+  </div>
+</div>
     <script src="quiz.js"></script>
 </body>
 </html>

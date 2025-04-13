@@ -276,7 +276,238 @@ const questions = [
   
   // Show the result
   document.getElementById("question-box").innerHTML = resultHtml;
-  
+  if (topDisease === "Common Cold") {
+    const remedyBox = document.querySelector('.common_cold');
+    if (remedyBox) {
+        remedyBox.style.display = 'block'; // Show it!
+        remedyBox.classList.add('remedies'); // Apply styling if needed
+        document.querySelector('#report').appendChild(remedyBox);
+        console.log(`Top disease detected: "${topDisease}"`);
+
+    }
+}
+if (topDisease === "Influenza (Flu)") {
+    const remedyBox = document.querySelector('.influenza');
+    if (remedyBox) {
+        remedyBox.style.display = 'block'; // Show it!
+        remedyBox.classList.add('remedies'); // Apply styling if needed
+        document.querySelector('#report').appendChild(remedyBox);
+        console.log(`Top disease detected: "${topDisease}"`);
+
+    }
+}
+if (topDisease === "Acute Bronchitis") {
+    const remedyBox = document.querySelector('.acute_bronchitis');
+    if (remedyBox) {
+        remedyBox.style.display = 'block'; // Show it!
+        remedyBox.classList.add('remedies'); // Apply styling if needed
+        document.querySelector('#report').appendChild(remedyBox);
+        console.log(`Top disease detected: "${topDisease}"`);
+
+    }
+}
+if (topDisease === "Sinusitis (Viral)") {
+    const remedyBox = document.querySelector('.sinusitis');
+    if (remedyBox) {
+        remedyBox.style.display = 'block'; // Show it!
+        remedyBox.classList.add('remedies'); // Apply styling if needed
+        document.querySelector('#report').appendChild(remedyBox);
+        console.log(`Top disease detected: "${topDisease}"`);
+
+    }
+}
+if (topDisease === "Pharyngitis (Strep Throat)") {
+    const remedyBox = document.querySelector('.pharyngitis');
+    if (remedyBox) {
+        remedyBox.style.display = 'block'; // Show it!
+        remedyBox.classList.add('remedies'); // Apply styling if needed
+        document.querySelector('#report').appendChild(remedyBox);
+        console.log(`Top disease detected: "${topDisease}"`);
+
+    }
+}
+if (topDisease === "Gastroenteritis (Viral)") {
+    const remedyBox = document.querySelector('.gastroenteritis');
+    if (remedyBox) {
+        remedyBox.style.display = 'block'; // Show it!
+        remedyBox.classList.add('remedies'); // Apply styling if needed
+        document.querySelector('#report').appendChild(remedyBox);
+        console.log(`Top disease detected: "${topDisease}"`);
+
+    }
+}
+if (topDisease === "Labyrinthitis"){
+    const remedyBox = document.querySelector('.labyrinthitis');
+    if (remedyBox) {
+        remedyBox.style.display = 'block'; // Show it!
+        remedyBox.classList.add('remedies'); // Apply styling if needed
+        document.querySelector('#report').appendChild(remedyBox);
+        console.log(`Top disease detected: "${topDisease}"`);
+
+    }
+}
+if(topDisease === "Meningitis (Viral)") {
+    const remedyBox = document.querySelector('.meningitis');
+    if (remedyBox) {
+        remedyBox.style.display = 'block'; // Show it!
+        remedyBox.classList.add('remedies'); // Apply styling if needed
+        document.querySelector('#report').appendChild(remedyBox);
+        console.log(`Top disease detected: "${topDisease}"`);
+
+    }
+}
+if (topDisease === "Early Stage Measles"){
+    const remedyBox = document.querySelector('.measles');
+    if (remedyBox) {
+        remedyBox.style.display = 'block'; // Show it!
+        remedyBox.classList.add('remedies'); // Apply styling if needed
+        document.querySelector('#report').appendChild(remedyBox);
+        console.log(`Top disease detected: "${topDisease}"`);
+
+    }
+}
+if (topDisease === "COVID-19 (Mild)") {
+    const remedyBox = document.querySelector('.covid19');
+    if (remedyBox) {
+        remedyBox.style.display = 'block'; // Show it!
+        remedyBox.classList.add('remedies'); // Apply styling if needed
+        document.querySelector('#report').appendChild(remedyBox);
+        console.log(`Top disease detected: "${topDisease}"`);
+
+    }
+}
+if (topDisease === "Post-Viral Syndrome") {
+    const remedyBox = document.querySelector('.post_viral_syndrome');
+    if (remedyBox) {
+        remedyBox.style.display = 'block'; // Show it!
+        remedyBox.classList.add('remedies'); // Apply styling if needed
+        document.querySelector('#report').appendChild(remedyBox);
+        console.log(`Top disease detected: "${topDisease}"`);
+
+    }
+}
+if (topDisease === "Dehydration") {
+    const remedyBox = document.querySelector(".dehydration");
+    if (remedyBox) {
+        remedyBox.style.display = 'block'; // Show it!
+        remedyBox.classList.add('remedies'); // Apply styling if needed
+        document.querySelector('#report').appendChild(remedyBox);
+        console.log(`Top disease detected: "${topDisease}"`);
+
+    }
+}
+if (topDisease === "Anemia") {
+    const remedyBox = document.querySelector('.anemia');
+    if (remedyBox) {
+        remedyBox.style.display = 'block'; // Show it!
+        remedyBox.classList.add('remedies'); // Apply styling if needed
+        document.querySelector('#report').appendChild(remedyBox);
+        console.log(`Top disease detected: "${topDisease}"`);
+
+    }
+}
+if (topDisease === "Migraine") {
+    const remedyBox = document.querySelector('.migraine');
+    if (remedyBox) {
+        remedyBox.style.display = 'block'; // Show it!
+        remedyBox.classList.add('remedies'); // Apply styling if needed
+        document.querySelector('#report').appendChild(remedyBox);
+        console.log(`Top disease detected: "${topDisease}"`);
+
+    }
+}
+if (topDisease === "Food Poisoning") {
+    const remedyBox = document.querySelector('.food_poisoning');
+    if (remedyBox) {
+        remedyBox.style.display = 'block'; // Show it!
+        remedyBox.classList.add('remedies'); // Apply styling if needed
+        document.querySelector('#report').appendChild(remedyBox);
+        console.log(`Top disease detected: "${topDisease}"`);
+
+    }
+}
+if (topDisease === "Panic Attack") {
+    const remedyBox = document.querySelector('.panic_attack');
+    if (remedyBox) {
+        remedyBox.style.display = 'block'; // Show it!
+        remedyBox.classList.add('remedies'); // Apply styling if needed
+        document.querySelector('#report').appendChild(remedyBox);
+        console.log(`Top disease detected: "${topDisease}"`);
+
+    }
+}
+if (topDisease === "Vertigo") {
+    const remedyBox = document.querySelector('.vertigo');
+    if (remedyBox) {
+        remedyBox.style.display = 'block'; // Show it!
+        remedyBox.classList.add('remedies'); // Apply styling if needed
+        document.querySelector('#report').appendChild(remedyBox);
+        console.log(`Top disease detected: "${topDisease}"`);
+
+    }
+}
+if (topDisease === "Upper Respiratory Infection (URI)") {
+    const remedyBox = document.querySelector('.uri');
+    if (remedyBox) {
+        remedyBox.style.display = 'block'; // Show it!
+        remedyBox.classList.add('remedies'); // Apply styling if needed
+        document.querySelector('#report').appendChild(remedyBox);
+        console.log(`Top disease detected: "${topDisease}"`);
+
+    }
+}
+if (topDisease === "Lower Respiratory Infection (LRI)") {
+    const remedyBox = document.querySelector('.lri');
+    if (remedyBox) {
+        remedyBox.style.display = 'block'; // Show it!
+        remedyBox.classList.add('remedies'); // Apply styling if needed
+        document.querySelector('#report').appendChild(remedyBox);
+        console.log(`Top disease detected: "${topDisease}"`);
+
+    }
+}
+if (topDisease === "Allergic Reaction") {
+    const remedyBox = document.querySelector('.allergic_reaction');
+    if (remedyBox) {
+        remedyBox.style.display = 'block'; // Show it!
+        remedyBox.classList.add('remedies'); // Apply styling if needed
+        document.querySelector('#report').appendChild(remedyBox);
+        console.log(`Top disease detected: "${topDisease}"`);
+
+    }
+}
+if (topDisease === "Ear Infection (Otitis Media)") {
+    const remedyBox = document.querySelector('.ear_infection');
+    if (remedyBox) {
+        remedyBox.style.display = 'block'; // Show it!
+        remedyBox.classList.add('remedies'); // Apply styling if needed
+        document.querySelector('#report').appendChild(remedyBox);
+        console.log(`Top disease detected: "${topDisease}"`);
+
+    }
+}
+if (topDisease === "Viral Pneumonia") {
+    const remedyBox = document.querySelector('.viral_pneumonia');
+    if (remedyBox) {
+        remedyBox.style.display = 'block'; // Show it!
+        remedyBox.classList.add('remedies'); // Apply styling if needed
+        document.querySelector('#report').appendChild(remedyBox);
+        console.log(`Top disease detected: "${topDisease}"`);
+
+    }
+}
+if (topDisease === "Kidney Infection (Pyelonephritis)") {
+    const remedyBox = document.querySelector('.kidney_infection');
+    if (remedyBox) {
+        remedyBox.style.display = 'block'; // Show it!
+        remedyBox.classList.add('remedies'); // Apply styling if needed
+        document.querySelector('#report').appendChild(remedyBox);
+        console.log(`Top disease detected: "${topDisease}"`);
+
+    }
+}
+ 
+
    
   });
       // Flatten the results by iterating over 'ultra' object and extracting the 'result' property

@@ -5,7 +5,177 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yoga </title>
     <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="yoga.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #f4f7f5;
+        color: #2c3e50;
+      }
+  
+      .head {
+        margin-top: 2vh;
+        background: url('/images/blog-bg.jpg') no-repeat center center/contain;
+        background-size: contain;
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        position: relative;
+        animation: fadeIn 2s ease-in;
+      }
+  
+      .head::after {
+        content: '';
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: rgba(0,0,0,0.4);
+      }
+  
+      .head h1 {
+        font-size: 3rem;
+        z-index: 1;
+      }
+  
+      section {
+        padding: 60px 20px;
+        max-width: 1100px;
+        margin: auto;
+      }
+  
+      h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 2rem;
+        color: #2c3e50;
+      }
+  
+      .benefits {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+      }
+  
+      .benefit-card {
+        background: #fff;
+        border-radius: 16px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        text-align: center;
+        transition: transform 0.3s ease, background 0.3s;
+      }
+  
+      .benefit-card:hover {
+        transform: translateY(-10px);
+        background-color: #e0f7ec;
+      }
+  
+      .poses {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+      }
+  
+      .pose {
+        background: #fff;
+        padding: 20px;
+        border-radius: 12px;
+        width: 300px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        animation: popIn 1s ease;
+      }
+  
+      iframe {
+        width: 100%;
+        height: 300px;
+        border: none;
+        border-radius: 12px;
+        margin-bottom: 20px;
+      }
+  
+.resources {
+  background-color: #f0faf5;
+  padding: 60px 20px;
+  border-top: 1px solid #dfeee8;
+}
+
+.resource-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.resource-card {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resource-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.resource-card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.resource-card a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #3aa17e;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+  font-weight: 500;
+}
+
+.resource-card a:hover {
+  background-color: #2b8669;
+}
+
+.resource-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+  
+  a {
+        color: #2980b9;
+        text-decoration: none;
+      }
+  
+  a:hover {
+        text-decoration: underline;
+      }
+  
+      @keyframes fadeIn {
+        from { opacity: 0; transform: scale(0.95); }
+        to { opacity: 1; transform: scale(1); }
+      }
+  
+      @keyframes popIn {
+        0% { opacity: 0; transform: translateY(20px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+    </style>
+    
 </head>
 <body>
     <header>
@@ -29,5 +199,74 @@
             </div>
         </div>
     </header>
+
+    <section class="head">
+        <h1>Find Balance Through Yoga</h1>
+    </section>
+    
+      <section>
+        <h2>🌿 Benefits of Yoga</h2>
+        <div class="benefits">
+          <div class="benefit-card">Improves Flexibility</div>
+          <div class="benefit-card">Reduces Stress & Anxiety</div>
+          <div class="benefit-card">Enhances Focus</div>
+          <div class="benefit-card">Boosts Strength</div>
+          <div class="benefit-card">Improves Sleep</div>
+          <div class="benefit-card">Supports Heart Health</div>
+        </div>
+      </section>
+    
+      <section>
+        <h2>🧘‍♂️ Yoga Poses</h2>
+        <div class="poses">
+          <div class="pose">
+            <h3>Mountain Pose (Tadasana)</h3>
+            <p>Improves posture and balance. Perfect for beginners.</p>
+          </div>
+          <div class="pose">
+            <h3>Warrior II (Virabhadrasana II)</h3>
+            <p>Builds stamina and opens hips and chest.</p>
+          </div>
+          <div class="pose">
+            <h3>Bridge Pose</h3>
+            <p>Strengthens back and relieves lower back tension.</p>
+          </div>
+        </div>
+      </section>
+    
+      <section>
+        <h2>📺 Practice With Videos</h2>
+        <iframe src="https://www.youtube.com/embed/v7AYKMP6rOE" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/HVITxjrNlts?si=Y969_qMePeQc-XTx" allowfullscreen></iframe>
+      </section>
+    
+      <section class="resources">
+        <h2>📚 Yoga Learning Resources</h2>
+        <div class="resource-cards">
+          <div class="resource-card">
+            <h3>Yoga Journal</h3>
+            <p>Explore articles, poses, and yoga philosophy on one of the most trusted platforms.</p>
+            <a href="https://www.yogajournal.com" target="_blank">Visit Site</a>
+          </div>
+          <div class="resource-card">
+            <h3>Do Yoga With Me</h3>
+            <p>Free yoga classes, programs, and guided meditations from expert instructors.</p>
+            <a href="https://www.doyogawithme.com/" target="_blank">Visit Site</a>
+          </div>
+          <div class="resource-card">
+            <h3>Yoga With Adriene</h3>
+            <p>YouTube’s favorite instructor offering fun, gentle practices for all levels.</p>
+            <a href="https://www.youtube.com/c/YogaWithAdriene" target="_blank">Watch on YouTube</a>
+          </div>
+          <div class="resource-card">
+            <h3>Boho Beautiful</h3>
+            <p>Dynamic yoga flows with beautiful visuals, mindfulness, and fitness content.</p>
+            <a href="https://www.youtube.com/c/BohoBeautiful" target="_blank">Watch on YouTube</a>
+          </div>
+        </div>
+      </section>
+      
+
+
 </body>
 </html>

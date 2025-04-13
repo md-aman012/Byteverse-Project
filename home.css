@@ -5,11 +5,16 @@
     font-family: 'Poppins', sans-serif;
 }
 
+a{
+  text-decoration: none;
+  color: black;
+}
+
 .navbar {
 
     display: flex;
     justify-content: space-between;
-    background-color: #2A3D2E;
+    background-color: #173e33;
     padding: 40px;
     color: white;
     flex-wrap: wrap;

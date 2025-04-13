@@ -1,0 +1,24 @@
+{
+  "name": "byteverse-project",
+  "version": "1.0.0",
+  "description": "This Repo Will contain all the files for byteverse project developed by team titans",
+  "main": "APscript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/md-aman012/Byteverse-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/md-aman012/Byteverse-Project/issues"
+  },
+  "homepage": "https://github.com/md-aman012/Byteverse-Project#readme",
+  "dependencies": {
+    "express": "^4.21.2",
+    "mongoose": "^8.13.2"
+  }
+}
