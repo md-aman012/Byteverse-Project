@@ -5,6 +5,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="navbar.css">
+
+    <style>
+  
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+    
+        body {
+          /* margin: 0; */
+          font-family: "Poppins", sans-serif;
+          background: linear-gradient(to right, #f9f9f9, #e9f0ff);
+          color: #333;
+          /* min-height: 100vh; */
+     
+        }
+    
+        .container {
+          max-width: 500px;
+          width: 100%;
+          margin: auto;
+          margin-top: vh;
+        }
+    
+        .quote {
+          font-size: 25px;
+          color: #555;
+          margin-bottom: 20px;
+          font-style: italic;
+        }
+    
+        h2 {
+          color: #333;
+          font-size: 32px;
+          margin-bottom: 15px;
+        }
+    
+        form {
+          background: #ffffff;
+          padding: 25px;
+          border-radius: 12px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+          margin-bottom: 20px;
+          max-width: 400px;
+          margin: 0 auto;
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+        }
+    
+
+        input {
+          padding: 12px;
+          border: 1px solid #ccc;
+          border-radius: 8px;
+          font-size: 16px;
+          transition: border-color 0.3s;
+        }
+    
+        input:focus {
+          border-color: #007bff;
+          outline: none;
+        }
+    
+        button {
+          padding: 14px 0;
+          font-size: 16px;
+          background-color: #28a745;
+          color: white;
+          border: none;
+          border-radius: 8px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+        }
+    
+        button:hover {
+          background-color: #218838;
+        }
+    
+        #totalCalDisplay {
+          font-size: 22px;
+          color: #dc3545;
+          font-weight: 600;
+          margin: 20px 0;
+        }
+    
+        #result {
+          font-weight: 600;
+          color: #007bff;
+          margin-top: 20px;
+          font-size: 18px;
+        }
+    
+        #my {
+          margin-top: 25px;
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+        }
+    
+        .calorie-card {
+          background: #ffffff;
+          border-left: 6px solid #28a745;
+          padding: 18px 24px;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+          border-radius: 10px;
+          font-size: 18px;
+          color: #444;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          animation: fadeIn 0.4s ease;
+        }
+    
+        .calorie-card::before {
+          content: "🍽️";
+          font-size: 22px;
+        }
+    
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+            transform: translateY(10px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+    
+        .footer {
+          margin-top: 50px;
+          font-size: 14px;
+          color: #999;
+        }
+      </style>
+
 </head>
 <body>
     <header>
@@ -22,11 +156,72 @@
             <div class="right" id="navLinks">
                 <div class="links"><a class="hoverlinks" href="blog.html">Blog</a></div>
                 <div class="links"><a class="hoverlinks" href="cc.html">Calorie Counter</a></div>
-                <div class="links"><a class="hoverlinks" href="/BYTEVERSE PROJECT/quiz.html">Quiz</a></div>
+                <div class="links"><a class="hoverlinks" href="/Byteverse-Project/Quiz/quiz.html">Quiz</a></div>
                 <div class="links"><a class="hoverlinks" href="yoga.html">yoga</a></div>
                 <div class="links"><a class="hoverlinks" href="AP.html">Book Apointment</a></div>
             </div>
         </div>
     </header>
+
+    <div class="container">
+        <div class="quote">✨ "Take care of your body. It's the only place you have to live." ✨</div>
+    
+        <h2>🍴 Find Calorie Info</h2>
+    
+        <div id="totalCalDisplay">Total Calories Today: 0</div>
+    
+        <form id="calorieForm">
+          <input type="text" id="foodName" placeholder="Enter food name" required />
+          <input type="number" id="foodNo" placeholder="Enter portion size" required min="0" step="any" />
+          <button type="submit">Check Calories</button>
+        </form>
+    
+        <p id="result"></p>
+        <div id="my"></div>
+    
+        <div class="footer">© 2025 Calorie Finder</div>
+      </div>
+    
+      <script>
+        let totalCaloriesCount = 0;
+    
+        document.getElementById("calorieForm").addEventListener("submit", async (e) => {
+          e.preventDefault();
+    
+          const name = document.getElementById("foodName").value;
+          const portion = parseFloat(document.getElementById("foodNo").value);
+          const mydiv = document.getElementById("my");
+          const resultPara = document.getElementById("result");
+          const totalCalDisplay = document.getElementById("totalCalDisplay");
+    
+          try {
+            const res = await fetch(`http://localhost:5050/api/food?name=${encodeURIComponent(name)}`);
+            const data = await res.json();
+    
+            if (res.ok && data.calories) {
+              const totalCalories = portion * data.calories;
+              totalCaloriesCount += totalCalories;
+    
+              resultPara.innerHTML = `🔥 <strong>${portion}</strong> portion(s) of <strong>"${name}"</strong> contain <span style="color: #28a745;">${totalCalories}</span> calories.`;
+              totalCalDisplay.innerText = `Total Calories Today: ${totalCaloriesCount.toFixed(2)}`;
+    
+              if (totalCaloriesCount >= 2200) {
+                alert("Time to slow down munching and start some physical activity — you’ve completed your daily calorie intake!");
+              }
+    
+              const foodDiv = document.createElement("div");
+              foodDiv.className = "calorie-card";
+              foodDiv.innerText = `${name} (${portion}x) = ${totalCalories} cal`;
+              mydiv.appendChild(foodDiv);
+            } else {
+              resultPara.innerText = data.message || "Food not found.";
+            }
+          } catch (err) {
+            resultPara.innerText = "Server error.";
+          }
+        });
+      </script>
+    
+    
 </body>
 </html>
