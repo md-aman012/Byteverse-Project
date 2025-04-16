@@ -28,6 +28,15 @@ A one-stop solution for all medical and fitness-related needs including doctor a
 - **Database**:  
   - MongoDB  
 
+<h1> TO Run This Project </h1>
+<ul>
+  <li>Clone The Repo In your system</li>
+  <li>Change directory to quiz folder</li>
+  <li>Open spilit Terminal </li>
+  <li>Run Command "npm run dev"</li>
+  <li>run command "node quizzer.js"</li>
+  <li>Then Go live from home.html"</li>
+</ul>
 
 # video link : https://drive.google.com/drive/folders/1mC4tHo_1SSHVmjHQVFSaenrvg-tiLuYT?usp=drive_link
 
