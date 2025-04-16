@@ -1,10 +1,12 @@
 {
+  
   "name": "byteverse-project",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon calorieserver.js"
+    "dev": "nodemon calorieserver.js",
+    "quiz": "nodemon quizzer.js"
   },
   "type": "module",
   "keywords": [],
