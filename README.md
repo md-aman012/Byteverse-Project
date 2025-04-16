@@ -38,6 +38,8 @@ A one-stop solution for all medical and fitness-related needs including doctor a
   <li>Then Go live from home.html"</li>
 </ul>
 
+<h3> deployment link : https://dotthealth.netlify.app/home</h3>
+
 # video link : https://drive.google.com/drive/folders/1mC4tHo_1SSHVmjHQVFSaenrvg-tiLuYT?usp=drive_link
 
 ![image](https://github.com/user-attachments/assets/da9ca4aa-88ca-4daf-a257-b627a0ec0ff0)
