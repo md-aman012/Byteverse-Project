@@ -31,6 +31,11 @@ const questions = [
   let main = document.querySelector('#quiz-container');
   let getresult = document.getElementById("button");
   
+
+  getresult.addEventListener('click', () => {
+    report.style.display = "block";
+  })
+
   function showQuestion() {
     document.getElementById("question-text").textContent = questions[currentQuestion];
   }
